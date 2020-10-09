@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=PT+Serif:wght@400;700&family=Poppins:wght@400;600&display=swap');
+
+/*
+font-family: 'Montserrat', sans-serif;
+font-family: 'Poppins', sans-serif;
+font-family: 'PT Serif', serif;
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+body {
+    margin: 110px 240px auto 243px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 96px;
+}
+header h1
+{
+    display: inline-block;
+    width: 100%;
+    font-family: 'PT Serif';
+    font-weight: 700;
+    font-size: 3.6rem;
+    letter-spacing: -0.045rem;
+    line-height: 4.77rem;
+    font-style: normal;
+    /* padding-right: 215px; */
+}
+
+header .team__info h2 {
+    font-family: "Poppins";
+    font-weight: 600;
+    font-size: 1.8rem;
+    line-height: 2.7rem;
+}
+
+header .team__info p {
+    font-family: "Poppins";
+    font-weight: 400;
+    font-size: 1.8rem;
+    line-height: 2.7rem;
+}
+
+.card {
+    display: inline-block;
+    width: calc(100% / 3);
+}
+.card img {
+    height: auto;
+}
