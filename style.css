@@ -4,3 +4,130 @@ font-family: 'Montserrat', sans-serif;
 font-family: 'Poppins', sans-serif;
 font-family: 'PT Serif', serif;
 */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+.container {
+    max-width: 1440px;
+    margin: 110px 240px 30px 240px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 96px;
+}
+
+header .title {
+    font-family: "PT Serif";
+    font-size: 3.6rem;
+    font-weight: 700;
+    font-style: normal;
+    letter-spacing: -0.045rem;
+    line-height: 4.8rem;
+    flex-shrink: 1;
+}
+
+header div {
+    flex-basis: 439px;
+}
+
+header .subtitle {
+    font-family: "Poppins";
+    font-size: 1.8rem;
+    font-weight: 600;
+    font-style: normal;
+    line-height: 2.7rem;
+}
+
+header .description {
+    font-family: "Poppins";
+    font-size: 1.8rem;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 2.7rem;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.card {
+    position: relative;
+}
+.card:nth-child(2), .card:nth-child(5) {
+    margin-top: 80px;
+}
+
+.card .card-image {
+    width: 20vw;
+    height: auto;
+    /* padding-right: 30px; */
+}
+
+.card .job {
+    --offset-from-picture: 15px;
+    position: absolute;
+    top: 0;
+    left:100%;
+    font-family: "PT Serif";
+    font-size: 1.2rem;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 1.59rem;
+    text-transform: uppercase;
+    width: max-content;
+    transform: rotate(90deg) translate(0, calc(-1 * var(--offset-from-picture)));
+    transform-origin: top left;
+}
+
+.card .name {
+    font-family: "Poppins";
+    font-size: 1.8rem;
+    font-weight: 600;
+    font-style: normal;
+    line-height: 2.7rem;
+}
+
+footer {
+    margin-top: 40px;
+    text-align: center;
+}
+
+footer p {
+    font-family: "Montserrat";
+    font-size: 1.4rem;
+    font-weight: 600;
+    font-style: normal;
+    line-height: 1.707rem;
+    color: #A9A9A9;
+    ;
+}
+
+@media screen and (max-width: 375px) {
+    .container {
+        max-width: 375px;
+        margin: 17px 18px 18px 17px;
+    }
+    .card:nth-child(2n) {
+        margin-top: 80px;
+    }
+    .card:nth-child(5) {
+        margin-top: 0px !important;
+    }
+    .card .card-image {
+        width: 40vw;
+        height: auto;
+    }
+    .card .name {
+        font-size: 1.4rem;
+    }
+}
